@@ -1,0 +1,5 @@
+cd yolov5
+
+python train.py --data climbdata.yaml --batch-size 16 
+
+python detect.py --source ../datasets/climbdata/images/val --weights ./runs/train/exp31/weights/best.pt
